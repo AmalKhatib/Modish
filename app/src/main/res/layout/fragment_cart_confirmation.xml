@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/lightGrey"
+             tools:context=".activities.fragments.CartConfirmationFragment">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Confirmation"
+                  android:background="@color/colorAccent"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:padding="10dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Delivery Infrmation"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="20sp"
+                  android:padding="10dp"/>
+
+    <TextView android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dp"
+          android:background="@color/white"
+          android:layout_marginBottom="20dp"
+          android:text="Lorem ipsum dolor si amet consectetur adipiscing elit, sed do eiusmod tempor, adipiscing elit, sed do eiusmod tempor, adipiscing elit, sed do eiusmod tempor"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal"
+                android:textSize="17sp"/>
+
+        <TextView
+                android:id="@+id/tv_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100$"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:textSize="17sp"/>
+
+        <TextView
+                android:id="@+id/tv_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100$"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="17sp"/>
+
+        <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100$"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+        <ImageView
+                android:id="@+id/ic_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_payment"/>
+
+        <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment method"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/ic_category"
+                android:layout_marginStart="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash on delivery"
+                android:textColor="@color/colorPrimary"
+                android:layout_toEndOf="@id/ic_category"
+                android:layout_below="@id/tv_category"
+                android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

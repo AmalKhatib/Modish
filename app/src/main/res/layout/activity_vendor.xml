@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightGrey"
+        tools:context=".activities.activities.VendorActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+        <RelativeLayout
+                android:id="@+id/img_vendoe_cover"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/vendor_cover_">
+
+            <ImageView
+                    android:id="@+id/ic_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_alignParentTop="true"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info"
+                    android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/img_vendor"
+                android:layout_width="76.67dp"
+                android:layout_height="76.67dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/img_vendoe_cover"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/vendor_logo"/>
+
+        <TextView
+                android:id="@+id/tv_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vendror name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/img_vendor"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"/>
+
+        <TextView
+                android:id="@+id/tv_vendror_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:text="thi is vendor details, thi is vendor details, thi is vendor details, thi is vendor details, this is vendor detailsss.. This is vendor details.."
+                android:layout_below="@id/tv_vendor"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

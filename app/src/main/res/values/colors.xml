@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA325D</color>
+    <color name="colorPrimaryDark">#C02E51</color>
+    <color name="colorAccent">#2D3343</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="alpha_grey">#C7C7C7</color>
+    <color name="goldenYellow">#FFC107</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="darkGrey">#B4B3B3</color>
+    <color name="lightGrey">#EEEDED</color>
+    <color name="primaryAlpha">#CEDA325D</color>
+
+</resources>

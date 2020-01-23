@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey"
+        tools:context=".activities.fragments.CartDeliveryFragment">
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:background="@color/lightGrey">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Delivery"
+                  android:background="@color/colorAccent"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:padding="10dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Delivery Infrmation"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="20sp"
+                  android:padding="10dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_user"
+                       android:id="@+id/ic_user"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_user">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First name"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_user"
+                       android:id="@+id/ic_user2"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_user2">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last name"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_phone"
+                       android:id="@+id/ic_phone"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_phone">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First name"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_email_filled"
+                       android:id="@+id/ic_mail"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_mail">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_location"
+                       android:id="@+id/ic_location"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_location">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_city"
+                       android:id="@+id/ic_city"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_city">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Town/City"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_company"
+                       android:id="@+id/ic_company"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_copany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_company">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_zip"
+                       android:id="@+id/ic_zip"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_zip">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Postal code/Zip"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/ic_country"
+                       android:id="@+id/ic_country"
+                       android:layout_alignParentStart="true"
+                       android:layout_centerVertical="true"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ic_country">
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Country"
+                        android:backgroundTint="@color/grey"
+                        android:textColor="@color/colorAccent"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="Billing Infrmation"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="20sp"
+                  android:padding="10dp"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Same as delivery information"
+                    android:textSize="17sp"/>
+
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:thumbTint="@color/colorPrimaryDark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/layout_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+            <ImageView
+                    android:id="@+id/ic_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_order_note"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Note"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/ic_category"
+                    android:layout_toEndOf="@id/ic_order"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+
+    <ImageView
+            android:id="@+id/img_vendoe_cover"
+            android:layout_width="match_parent"
+            android:layout_height="76.67dp"
+            android:src="@drawable/vendor_cover_scale"
+            android:scaleType="fitXY"
+            android:foreground="@color/primaryAlpha"/>
+
+    <ImageView
+            android:id="@+id/img_vendor"
+            android:layout_width="76.67dp"
+            android:layout_height="76.67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_vendoe_cover"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/vendor_logo"/>
+
+    <TextView
+            android:id="@+id/tv_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vendror name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@id/img_vendor"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"/>
+
+    <TextView
+            android:id="@+id/tv_vendror_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="thi is vendor details, thi is vendor details, thi is vendor details, thi is vendor details, this is vendor detailsss.. This is vendor details.."
+            android:layout_below="@id/tv_vendor"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:textAlignment="center"
+    />
+
+    <LinearLayout
+            android:id="@+id/layout_cart_like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vendror_details"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:background="@drawable/bg_product_like">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/layout_cart_like"
+            android:layout_toRightOf="@id/img_product"
+            android:layout_toEndOf="@+id/img_product"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/lightGrey"/>
+</RelativeLayout>
