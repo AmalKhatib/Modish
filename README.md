@@ -1,2 +1,3 @@
 # Modish
-*An online shopping application for beauty products.*
+An online shopping application for beauty products.
+
